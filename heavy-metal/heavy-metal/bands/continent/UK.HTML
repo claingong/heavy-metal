@@ -1,0 +1,12 @@
+---
+layout: page
+title:  UK
+---
+
+
+{% for band in site.data.metal_bands_2017 %}
+    
+    {% if band.origin == "United Kingdom"  %}
+        <h2>{{ band.band_name }}</h2>
+    {% endif %}
+{% endfor %}

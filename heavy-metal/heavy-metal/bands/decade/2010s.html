@@ -1,0 +1,12 @@
+---
+layout: page
+title:  2010s
+---
+
+
+{% for band in site.data.metal_bands_2017 %}
+    {% assign band_formed = band.formed | plus:0 %}
+    {% if band_formed >= 2010 %}
+        <h2>{{ band.band_name }}</h2>
+    {% endif %}
+{% endfor %}
